@@ -21,9 +21,12 @@ public class Frames {
 		Thread.sleep(3000);
 		driver.switchTo().frame(2);
 		Thread.sleep(3000);
+		//Nestedframes
 		driver.findElement(By.xpath("//input[@name='mytext3']")).sendKeys("Varsha");
 		Thread.sleep(2000);
-		//driver.findElement(By.xpath("(//div[@class='AB7Lab Id5V1'])[1]")).click();
+		driver.switchTo().frame(0);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//div[@class='AB7Lab Id5V1'])[1]")).click();
 
 	}
 
