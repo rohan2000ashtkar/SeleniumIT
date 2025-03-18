@@ -20,7 +20,7 @@ public class MultipleWindowHandle {
 			Thread.sleep(2000);
 			List<WebElement> dress=driver.findElements(By.xpath("//ul[@class='results-base']/child::li/child::a"));
 			Thread.sleep(2000);
-			for (int i=0;i<2;i++)
+			for (int i=0;i<4;i++)
 			{
 				dress.get(i).click();
 				Thread.sleep(2000);
