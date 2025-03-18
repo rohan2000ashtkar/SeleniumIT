@@ -38,10 +38,7 @@ public class MultipleWindowHandle {
 			//String ChildID2=it.next();
 			driver.switchTo().window(ChildID);
 			System.out.println(driver.getCurrentUrl());
-			TakesScreenshot ts=(TakesScreenshot)driver;
-			File src=ts.getScreenshotAs(OutputType.FILE);
-			File dis=new File("C:\\Users\\rohan\\Desktop\\New folder\\GrowskilIT_Selenium\\ScreenShot\\childwindow.jpeg");
-			FileHandler.copy(src, dis);
+			
 	}
 
 }
